@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Landing Page - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+    <script>
+        window.onload = function () {
+          document.querySelector("#okBtn").addEventListener("click", okMem);
+        };
+        function okMem() {
+            alert("수정되었습니다.")
+            let url = "/index.html";
+            location.href = url;
+        }
+        
+        // document.querySelector("#modifyBtn").addEventListener("click", modifyBtn);
+
+        function modify() {
+            let emailDisabled = document.querySelectorAll(".modify");
+            // console.log(emailDisabled)
+            emailDisabled.forEach(function (m) {
+                let disabled = m.disabled;
+                if (disabled) {
+                    m.disabled = false;
+                } else {
+                    m.disabled = true;
+                }
+                m.value = "";
+            })
+        }
+
+        window.onload = function () {
+            document.querySelector("#deleteMemBtn").addEventListener("click", deleteMem);
+            // document.querySelector("#modifyBtn").addEventListener("click", modifyBtn);
+        };
+        function deleteMem() {
+            clearStorage();
+            alert("삭제되었습니다.")
+            let url = "/index.html";
+            location.href = url;
+        }
+        
+    </script>
+  </head>
+  <div>
+    <header>
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1"  href="/index.html">구해줘 홈즈</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div>
+            <ul id="nav-header-point" class="nav justify-content-end">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <div  style="
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  ">
+  <form>
+  <div class="mb-3">
+    <label for="InputEmail1" class="form-label">이메일</label>
+    <br>
+    <input class="modify" type="text" disabled value="zzambbong@kakao.com">
+
+  </div>
+  <div class="mb-3">
+    <label for="InputPassword1" class="form-label">비밀번호</label>
+    <br>
+    <input class="modify" type="text" disabled value="secret">
+  </div>
+  <div class="mb-3">
+    <label for="InputName" class="form-label">이름</label>
+    <br>
+    <input class="modify" type="text" disabled value="이왜지">
+  </div>
+  <div class="mb-3">
+    <label for="InputAddress" class="form-label">주소</label>
+    <br>
+    <input class="modify" type="text" disabled value="서울시 서초구 짱동">
+ </div>
+  <div class="mb-3">
+    <label for="InputPhoneNumber" class="form-label">전화번호</label>
+    <br>
+    <input class="modify" type="text" disabled value="000-1112-3123">
+  </div>
+  <button type="button" id="okBtn" class="btn btn-primary" >확인</button>
+  <button type="button" id="modifyBtn" class="btn btn-primary" onclick="modify()" >수정</button>
+  <button type="button" id="deleteMemBtn" class="btn btn-primary" >삭제</button>
+</form>
+    </div>
+    </div>
+     <!-- Footer-->
+     <footer class="footer bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item"><a href="#!">About</a></li>
+                <li class="list-inline-item">⋅</li>
+                <li class="list-inline-item"><a href="#!">Contact</a></li>
+                <li class="list-inline-item">⋅</li>
+                <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                <li class="list-inline-item">⋅</li>
+                <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+              </ul>
+              <p class="text-muted small mb-4 mb-lg-0">
+                &copy; Your Website 2022. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="../js/commons.js"></script>
+  </body>
+</html>
