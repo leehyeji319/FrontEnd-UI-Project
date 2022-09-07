@@ -41,7 +41,8 @@
 
 ### 멤버 수정 GIF
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/50399088/188881508-144d416f-f4f7-4561-a9d7-4c1ca492f2c6.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/50399088/188886282-3aeefc94-5315-4a49-a98c-a37a6fe1cf91.gif)
+
 
 
 <img width="1552" alt="스크린샷 2022-09-07 17 39 40" src="https://user-images.githubusercontent.com/50399088/188832421-6a82ad1d-a90a-40d9-9278-47097971b36e.png">
